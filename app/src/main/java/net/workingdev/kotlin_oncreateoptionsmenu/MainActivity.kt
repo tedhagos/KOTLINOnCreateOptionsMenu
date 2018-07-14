@@ -17,6 +17,10 @@ class MainActivity : AppCompatActivity() {
     showMessage("onCreate")
   }
 
+  // the onCreateOptionsMenu method lets us add
+  // menu item to the ActionBar while the program is running
+
+
   override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
     menu?.add("File")
@@ -25,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 
     return super.onCreateOptionsMenu(menu)
   }
+
+  // the onOptionsItemSelected function is called everytime
+  // the user clicks on any of menu items. So this is a good place
+  // to handle the events
 
   override fun onOptionsItemSelected(item: MenuItem?): Boolean {
     when(item?.toString()) {
